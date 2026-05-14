@@ -1,0 +1,19 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Servidor de desarrollo local
+serve.py
+
+# Carpeta de configuración del editor
+.claude/
+
+# Carpeta de preview temporal
+portafolio-web-preview/
+
+# Archivo de propuesta visual (no es parte del sitio)
+mockup.html
+
+# Variables de entorno
+.env
+.env.*
