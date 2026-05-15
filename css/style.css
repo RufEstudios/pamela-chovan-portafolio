@@ -305,6 +305,16 @@ input, textarea, select { font: inherit; }
 .pcard-tags { display: flex; flex-wrap: wrap; gap: .3rem; margin-bottom: .9rem; }
 .pcard-acts { display: flex; gap: .55rem; flex-wrap: wrap; }
 
+/* ─── FEATURED PROJECT CARDS (index — "Trabajo seleccionado") ─── */
+.project-grid--featured { align-items: stretch; }
+.project-grid--featured .pcard { height: 100%; }
+.pcard--featured .pcard-med { aspect-ratio: 3/2; }
+.pcard--featured .pcard-med img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .65s var(--ease); }
+.pcard--featured:hover .pcard-med img { transform: scale(1.04); }
+.pcard-med__ov { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(26,20,16,.1) 0%, rgba(26,20,16,.55) 100%); pointer-events: none; }
+.pcard--featured .pcard-med__ph { font-size: .65rem; color: rgba(253,250,243,.22); letter-spacing: .12em; }
+.pcard--featured .pcard-acts { margin-top: auto; }
+
 /* ─── FICHA TÉCNICA EXPANDIDA ─── */
 .ficha-toggle {
   display: inline-flex; align-items: center; gap: .55rem;
